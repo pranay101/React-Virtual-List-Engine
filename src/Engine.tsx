@@ -82,8 +82,6 @@ export function VirtualListEngine<T>({
     return () => container.removeEventListener("scroll", handleScroll);
   }, []);
 
-  console.log(visibleItems);
-
   return (
     <div
       ref={containerRef}
